@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: lightgreen;
+            padding: 10px;
+            border: 1px solid green;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384);
+            width: 500px;
+            text-align: justify;
+        }
+
+        div:hover {
+            color: rgb(253, 253, 199)
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de houver</h1>
+    <div>
+        Passe o mouse aqui
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, amet eius quis totam porro minus. Consectetur vel eaque recusandae a! Unde ad voluptatibus deleniti temporibus consequatur aut repudiandae ipsam quia!</p>
+    </div>
+    <p>passe o mouse sobre o texto abaixo</p>
+</body>
+</html>

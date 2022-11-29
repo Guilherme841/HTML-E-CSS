@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(255, 67, 255);
+            text-decoration: none;
+            font-weight: bold;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 3px;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 2px;
+        }
+        
+        a:visited {
+            color: violet;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+        a:active {
+            color: purple;
+        }
+
+        .especial {
+            background-color: rgb(144, 238, 175);
+        }
+
+        .especial::before {
+            content: '👉 ';
+        }
+
+        .especial::after {
+            content: ' 👈';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <h2>Links</h2>
+    <ul type="square">
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">Git hub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external" class="especial">Youtube/Curso em video</a></li>
+        <li><a href="https://www.netflix.com/br/" target="_blank" rel="external">Netflix</a></li>
+    </ul>
+</body>
+</html>

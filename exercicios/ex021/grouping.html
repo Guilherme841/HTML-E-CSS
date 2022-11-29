@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags </title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom,pink, rgba(255, 105, 180, 0.836));
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.473);
+            font-weight: normal;
+            text-align: center;
+        }
+        h2 {
+            font-weight: normal;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: rgba(255, 255, 180, 0.815);
+            padding: 1px;
+            border-radius: 10px;
+            outline: 1px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+        }
+        li {
+            margin: 10px;
+        }
+        li > a {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+        li > a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        header {
+            background-color: white;
+            padding: 5px 30px 40px;
+            margin-bottom: 40px;
+            outline: 2px solid rgba(128, 0, 128, 0.356);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            text-align: justify;
+            outline: 2px solid rgba(128, 0, 128, 0.356);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.253);
+            margin-bottom: 40px;
+        }
+        article > p {
+            font-family: serif;
+        }
+        article > aside {
+            font-weight: bold;
+            font-style: italic;
+            background-color: beige;
+            padding: 5px;
+            border-radius: 7px;
+        }
+        aside > p {
+            margin: 0px;
+        }
+        footer {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(248, 135, 224);
+            font-style: italic;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+        <nav>
+            <ul type="square">
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Hexa campeão</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus facilis inventore explicabo eveniet nemo nobis unde. Sunt quod nam nostrum! Asperiores optio minima veritatis? Ex, cumque quas! Numquam, modi.</p>
+                <aside><p>Título da seleção brasileira</p></aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Desenvolvido por Guilherme</p>
+    </footer>
+</body>
+</html>
