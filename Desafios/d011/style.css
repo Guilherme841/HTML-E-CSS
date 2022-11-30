@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background: url('imagens/espaco-700.jpg');
+    background-size: cover;
+}
