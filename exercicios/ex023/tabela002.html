@@ -13,6 +13,29 @@
 
         table {
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        } 
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td, th {
@@ -30,11 +53,12 @@
 <body>
     <h1>Tabela 002</h1>
     <table>
+        <caption>Populaçao dos países</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>País</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">País</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -58,11 +82,81 @@
                 <td>Indonésia</td>
                 <td>273 523 615</td>
             </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273 523 615</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Totalização da população</th>
-                <td>00000</td>
+                <th scope="row">Totalização da população</th>
+                <td colspan="2">00000</td>
             </tr>
         </tfoot>
     </table>
