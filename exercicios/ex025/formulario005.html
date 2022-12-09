@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="script.js" method="post">
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+                <input type="radio" value="M" name="sexo" id="isexm">
+                <label for="isexm">Masculino</label>
+                <input type="radio" value="F" name="sexo" id="isexf">
+                <label for="isexf">Feminino</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <div>
+                <input type="checkbox" name="futebol" id="ifutebol">
+                <label for="ifutebol">Futebol</label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
