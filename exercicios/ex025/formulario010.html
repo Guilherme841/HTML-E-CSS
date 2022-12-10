@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario 010</h1>
+    <form action="script.js" method="post">
+        <div>
+            <label for="idata">Data de nascimento </label>
+            <input type="number" name="data" id="idata" oninput="calcIdade()">
+        </div>
+        <div>
+            <output id="Idade">
+                0
+            </output>
+        </div>
+    </form>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+    <script>
+        function calcIdade() {
+            let ano = new Date().getFullYear()
+            Idade.innerHTML = ano - idata.value
+        }
+    </script>
+</body>
+</html>

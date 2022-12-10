@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+        textarea {
+            width: 500px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario 007</h1>
+    <form action="script.js" method="post">
+        <div>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected >São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="FORTAL">Fortaleza</option>
+                    <option value="MG">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iprofissao">Profissao</label>
+            <input type="text" name="profissao" id="iprofissao" list="datalist">
+            <datalist id="datalist">
+                <option>Engenheiro</option>
+                <option>Advogado</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="imsg">Mensagem</label><br>
+            <textarea style="resize: none"  name="texto" id="imsg" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</body>
+</html>
