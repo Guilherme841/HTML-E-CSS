@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    width: 600px;
+    margin: auto;
+    background-color: orange;
+    padding: 20px;
+    border: 3px solid black;
+    margin-bottom: 70px;
+}
+
+main h1 {
+    font-size: 3em;
+    text-align: center;
+    color: rgb(58, 138, 170);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+li {
+    padding: 5px;
+}
+
+button {
+    margin-top: 20px;
+}
