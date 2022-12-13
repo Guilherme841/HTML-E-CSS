@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#menu {
+        display: none;
+    }
+
+    nav#nav {
+        display: block;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    article {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav#nav {
+        text-align: left;
+    }
+}
+
