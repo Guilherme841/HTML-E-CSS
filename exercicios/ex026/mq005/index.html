@@ -36,7 +36,10 @@
         <p>Site criado por &copy;Guilherme</p>
     </footer>
     <script>
-
+        const teste = document.getElementById("teste")
+        teste.addEventListener("click", function() {
+            nav.style.display = "none";
+        })
         function mudoutamanho() {
             if (window.innerWidth >= 768) {
                 nav.style.display = 'block'
